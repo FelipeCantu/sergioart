@@ -91,7 +91,19 @@
 }
 
 .jumbotron {
-    background-image: url('images/main-image.jpg');
+    background-image: linear-gradient(to bottom, rgba(168, 169, 182, 0.589), 
+    rgba(1, 152, 117, 1) 90%),url('images/main-image.jpg');
     background-size: cover;
     height: 100vh;
+}
+
+.main-container {
+    /* background-color: grey; */
+    max-width: 60%;
+}
+
+#avatar {
+    width: 300px;
+    height: 500px;
+
 }
