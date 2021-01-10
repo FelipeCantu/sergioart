@@ -1,6 +1,14 @@
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+}
+
 .wrap:before {
     transition: .3s all ease-in-out;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     content: "";
     position: absolute;
     z-index: 2000;
@@ -34,7 +42,7 @@
     background-color: grey;
     height: calc(100vh);
     transform: translateX(110%);
-    box-shadow: -10px 0 20px -10px rgba(0,0,0,0.1);
+    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
     transition: .3s all ease-in-out;
 }
 
@@ -91,8 +99,7 @@
 }
 
 .jumbotron {
-    background-image: linear-gradient(to bottom, rgba(168, 169, 182, 0.589), 
-    rgba(1, 152, 117, 1) 90%),url('images/main-image.jpg');
+    background-image: linear-gradient(to bottom, rgba(168, 169, 182, 0.589), rgba(1, 152, 117, 1) 90%), url('images/main-image.jpg');
     background-size: cover;
     height: 100vh;
 }
@@ -105,5 +112,62 @@
 #avatar {
     width: 300px;
     height: 500px;
+}
 
+@media only screen and (max-width: 400px) {
+    #avatar {
+        width: 150px;
+        height: 250px;
+    }
+    .display-4 {
+        display: flex;
+        font-size: 25px;
+    }
+    hr {
+        display: none;
+    }
+    p {
+        display: none;
+    }
+}
+
+.social-media ul {
+    display: flex;
+    float: right;
+    margin-right: 25px;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media .social-links a {
+    padding-right: 20px;
+    color: black;
+    transform: translate(-50%, 50%);
+}
+
+.social-media ul li a i {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    transition: .7s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.social-media ul li a:hover {
+    transform: translate(0, 10px);
+}
+
+.social-media ul li a i:hover {
+    /* background-image: ; */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
