@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Lobster&display=swap');
 html {
     height: 100%
 }
 
 body {
     height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand {
+    font-family: 'Bodoni Moda', serif;
 }
 
 .wrap:before {
@@ -128,6 +134,9 @@ body {
     }
     p {
         display: none;
+    }
+    .main-container {
+        position: relative;
     }
 }
 
